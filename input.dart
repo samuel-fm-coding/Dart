@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: InputScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -29,7 +30,7 @@ class _InputScreenState extends State<InputScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Input via Teclado'),
+        title: Text('Entrada de Dados'),
       ),
       body: Padding(
         padding: EdgeInsets.all(20.0),
@@ -39,10 +40,9 @@ class _InputScreenState extends State<InputScreen> {
             TextField(
               controller: _textEditingController,
               decoration: InputDecoration(
-                hintText: 'Digite algo...',
-                labelText: 'Entrada de Dados',
-                border: OutlineInputBorder(),
-              ),
+                  hintText: 'Digite seu primeiro nome...',
+                  labelText: 'Nome',
+                  border: OutlineInputBorder()),
             ),
             SizedBox(height: 20.0),
             ElevatedButton(
@@ -63,7 +63,7 @@ class _InputScreenState extends State<InputScreen> {
     if (inputText.isEmpty) {
       _showAlertDialog(context, 'Erro', 'Por favor, digite algo!');
     } else {
-      _showAlertDialog(context, 'Sucesso', 'Você digitou: $inputText');
+      _showAlertDialog(context, 'Sucesso', 'Bem vindo(a), $inputText !!!');
       // Limpar o campo de texto após a submissão bem-sucedida
       _textEditingController.clear();
     }
