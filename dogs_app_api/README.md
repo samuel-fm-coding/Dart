@@ -1,6 +1,6 @@
-# Stateful Click Counter
+# Project Dogs API
 
-A new Flutter project created with FlutLab - https://flutlab.io
+The project has been created with FlutLab - https://flutlab.io
 
 ## Getting Started
 
