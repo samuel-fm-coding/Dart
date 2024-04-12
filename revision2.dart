@@ -79,10 +79,10 @@ class _CalculadoraForm extends State<Calculadora> {
         backgroundColor: Colors.black,
         title:  const Text(
           'Calculadora de Médias',
-          style: TextStyle(
-            fontSize: 20,
-            color: Colors.white
-          ),
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white
+            ),
           ),
         centerTitle: true,
       ),
@@ -126,17 +126,17 @@ class _CalculadoraForm extends State<Calculadora> {
             ElevatedButton(
               onPressed: _CalculaMedia,
               child: const Text('Calcular'),
-                    style: const ButtonStyle(
-                        backgroundColor: MaterialStatePropertyAll<Color>(Colors.blue),
-                        foregroundColor: MaterialStatePropertyAll<Color>(Colors.white)
-                    ),
+                  style: const ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll<Color>(Colors.blue),
+                      foregroundColor: MaterialStatePropertyAll<Color>(Colors.white)
+                  ),
             ),
             const SizedBox(height: 10),
             Text(
               '$_result',
-              style: TextStyle(
-                fontSize: 20
-              ),
+                style: TextStyle(
+                  fontSize: 20
+                ),
               )
           ],
         ),
