@@ -24,12 +24,12 @@ class App extends StatelessWidget {
           backgroundColor: Colors.red,
         ),
         body: Stack(
-          fit: StackFit.expand,
+          fit: StackFit.expand, //ocupar todo o body
           children: [
             // Imagem de fundo
             Image.asset(
-              'assets/background_image.jpg',
-              fit: BoxFit.cover,
+              'assets/imagem-de-fundo.jpg',
+              fit: BoxFit.cover, // atrás do conteúdo (ao fundo)
             ),
             // Conteúdo da calculadora
             Calculadora(),
