@@ -24,6 +24,7 @@ class App extends StatelessWidget {
         ),
         body: CalculaDespesa(),
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
