@@ -81,22 +81,28 @@ class _CalculadoraState extends State<Calculadora> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.all(50),
       child: Column(
         children: <Widget>[
-          TextField(
-            controller: _controlador1,
-            keyboardType: TextInputType.number,
-            decoration: const InputDecoration(
-              labelText: 'Digite um número' 
+          SizedBox(
+            width: 300, // Definindo a largura desejada para os TextField
+            child: TextField(
+              controller: _controlador1,
+              keyboardType: TextInputType.number,
+              decoration: const InputDecoration(
+                labelText: 'Digite um número',
+              ),
             ),
           ),
           const SizedBox(height: 10,),
-          TextField(
-            controller: _controlador2,
-            keyboardType: TextInputType.number,
-            decoration: const InputDecoration(
-              labelText: 'Digite outro número'
+          SizedBox(
+            width: 300, // Definindo a largura desejada para os TextField
+            child: TextField(
+              controller: _controlador2,
+              keyboardType: TextInputType.number,
+              decoration: const InputDecoration(
+                labelText: 'Digite outro número',
+              ),
             ),
           ),
           const SizedBox(height: 20,),
